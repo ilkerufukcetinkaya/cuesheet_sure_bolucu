@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUE SHEET SÜRE DAĞITICI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">CUE SHEET SÜRE DAĞITICI</h1>
+
+        <div class="input-section">
+            <label for="totalTime" class="time-label">TOPLAM SÜRE:</label>
+            <div class="time-inputs">
+                <input type="number" id="hours" name="hours" min="0" placeholder="Saat">
+                <input type="number" id="minutes" name="minutes" min="0" max="59" placeholder="Dakika">
+                <input type="number" id="seconds" name="seconds" min="0" max="59" placeholder="Saniye">
+            </div>
+        </div>
+
+        <div class="input-section">
+            <label for="themeCount">TEMA ADEDİ:</label>
+            <input type="number" id="themeCount" name="themeCount" min="1">
+        </div>
+
+        <div class="input-section">
+            <button onclick="distributeAndExport()">DAĞIT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
